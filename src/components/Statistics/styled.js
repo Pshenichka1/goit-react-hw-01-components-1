@@ -17,7 +17,7 @@ margin-bottom: 15px;
 color: #635C5E;`
 
 const StatList = styled.ul`
-width: 370px;
+width: 500px;
 display: flex;
 justify-content: space-around;
 padding: 0;

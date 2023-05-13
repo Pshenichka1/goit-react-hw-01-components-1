@@ -16,22 +16,17 @@ list-style: none;`
 const ItemFriend = styled.li`
 width: inherit;
 display: flex;
-align-items: stretch;
+align-items: center;
 box-shadow: 0 0 10px #c6cccced;
 padding: 20px;` 
 
 const Status = styled.span`
-width: 30px;
-height: 30px;
+width: 20px;
+height: 20px;
 border-radius: 50%;
 margin-right: 20px;
-background-color: 
-// true {
-//   background-color: green;
-// }
-// false {
-//   background-color: red;
-// }`
+background-color: ${props => (props.isOnline ? 'green' : 'red')};
+`
 
 const AvatarFriend = styled.img`
 width: 100px;

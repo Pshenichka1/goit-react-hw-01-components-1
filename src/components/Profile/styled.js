@@ -3,8 +3,8 @@ import styled from "styled-components";
 const Section = styled.section`
 margin: 0 auto;
 padding: 30px;
-width: 400px;
-height: 400px;
+width: 600px;
+height: 600px;
 background-color: #ffffff;
 display: flex;
 flex-direction: column;

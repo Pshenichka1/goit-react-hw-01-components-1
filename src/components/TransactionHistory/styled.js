@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 const Table = styled.table`
 margin: auto;
-padding: 30px;
+padding: 0 10px;
 box-shadow: 0 0 10px #c6cccced;
-width: 460px;
+width: 650px;
 border: none; `
 
 
 
 const Thead = styled.thead`
+width: inherit;
+height: 50px;
 margin-bottom: 5px;
 background-color: #3d85c6;
 padding: 15px auto;`
