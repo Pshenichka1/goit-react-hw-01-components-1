@@ -20,11 +20,6 @@ font-size: 18px;
 margin-bottom: 5px;
 color: #fbfbfb;`
 
-const TrBodyTable = styled.tr`
-display: flex;
-justify-content: space-around;
-border-bottom: solid 1px #c6cccce6;`
-
 const TdBodyTab = styled.td`
 padding: 10px;
 width: inherit;
@@ -33,4 +28,4 @@ font-size: 15px;
 color: #949494;
 text-align: center;`
 
-export { Table, Thead, TheadTitle, TrBodyTable, TdBodyTab };
+export { Table, Thead, TheadTitle, TdBodyTab };
