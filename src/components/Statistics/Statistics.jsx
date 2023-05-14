@@ -18,7 +18,7 @@ const createColor = () => {
 
 export const Statistics = ({title, stats}) => {
     return (<Section>
-        <Title>{title}</Title>
+        {title && <Title>{title}</Title>}
         <StatList>
             {stats.map(({ id, label, percentage }) => {
                 return (
@@ -36,7 +36,12 @@ export const Statistics = ({title, stats}) => {
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    id: PropTypes.number.isRequired,
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
+    stats: PropTypes.arrayOf(
+       PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired,
+       }),
+    )
+    
 }

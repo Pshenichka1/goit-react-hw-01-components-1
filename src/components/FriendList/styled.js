@@ -25,7 +25,6 @@ width: 20px;
 height: 20px;
 border-radius: 50%;
 margin-right: 20px;
-background-color: ${props => (props.isOnline ? 'green' : 'red')};
 `
 
 const AvatarFriend = styled.img`
