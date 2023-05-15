@@ -4,7 +4,7 @@ import { ItemFriend, Status, AvatarFriend, NameFriend } from '../FriendList/styl
 
 export const FriendListItem = ({ avatar, name, isOnline, id }) => {
     return (
-        <ItemFriend key={id}>
+        <ItemFriend>
             <Status style={{ backgroundColor: isOnline ? 'green' : 'red' }}>{isOnline}</Status>
             <AvatarFriend src={avatar} alt={name} width="48" />
             <NameFriend>{name}</NameFriend>
@@ -12,10 +12,9 @@ export const FriendListItem = ({ avatar, name, isOnline, id }) => {
     )
 }
 
-FriendListItem.propTypes = PropTypes.shape ({
-    id: PropTypes.string.isRequired,
+FriendListItem.propTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,
 
-})
+}
